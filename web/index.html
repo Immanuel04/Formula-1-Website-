@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registrations.css">
+  </head>
+  <body background="./img/bg4.jpg">
+    <form class="signup-form" action="register.jsp" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Create Account</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="ID" class="label-title">ID</label>
+            <input type="text" name="name" class="form-input" placeholder="Give your personalized id" required="" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Name *</label>
+            <input type="text" name='lname' class="form-input" placeholder="Enter your name" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email *</label>
+          <input type="email" name="email" class="form-input" placeholder="Enter your email">
+        </div>
+
+        <!-- Password and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" name="password" class="form-input" placeholder="Enter your password" required="">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" name="cpass" class="form-input" name="confirm-password" placeholder="Enter your password again" required="">
+          </div>
+        </div>
+
+        <!-- Gender and Hobbies -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio"  name="gender" value="male" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+            </div><br>
+          </div>
+          <div class="form-group right">
+            <label class="label-title">Preferred Game</label>
+            <div>
+              <label><input type="checkbox" name="gm" value="F1 2022">F1 2022</label>
+              <label><input type="checkbox" name="gm" value="F1 MOBILE RACING">F1 MOBILE RACING</label><br>
+              <label><input type="checkbox" name="gm" value="F1 CLASH">F1 CLASH</label>
+            </div>
+          </div>
+        </div>
+          <div class="form-group right">
+            <label for="experience" class="label-title">Age *</label>
+            <input type="text" name="age"  class="form-input" required="">
+          </div>
+        </div>
+<!-- form-footer -->
+      <div class="form-footer">
+        <span>* required</span>
+        <button type="submit" class="btn">Create</button>
+      </div>
+
+    </form>
+
+    <!-- Script for range input label -->
+    <script>
+      var rangeLabel = document.getElementById("range-label");
+      var experience = document.getElementById("experience");
+
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+    </script>
+
+  </body>
+</html> 
+    

@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Jan, 2023, 11:14:30 PM
+    Author     : Grissna
+*/
+*{
+    padding:0;
+    margin:0;
+    
+    font-family: sans-serif;
+  }
+  
+  :root{
+    --lightGreen:lightgreen;
+    }
+  
+  
+  body{
+    overflow:scroll;
+    background-image: url("./img/Background1.jpg")
+  }
+  
+  h1{
+    font-size: 250%;
+    transition: 1s;
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+  }
+  h1:hover{
+    font-size:200%;
+    color: white;
+  }
+  .banner{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSrwjl6aFpt3ge5u6TIpegiLpv9WFgUCswg&usqp=CAU);
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner{
+    background-color: cornflowerblue;
+    height: 250px;
+    font-size: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  nav{
+    background-color: red;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    padding: 0px 20px 5px 40px;
+
+  }
+  
+  nav ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    
+  }
+  
+  nav ul li a:hover{
+    color: rgb(109, 163, 202);
+  }
+  .container{
+    max-width:920px;
+    padding-left:200px;
+    padding-right:200px;
+    margin:0 auto;
+    padding:80px;
+  }
+  
+  .container h2, .container p{
+    display:flex;
+    font-size: 29px;
+    /* self-content: end;   */
+  }
+  h3{
+    
+    font-size: 30px;
+  }
+ h2{
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+ img{
+   margin-left:100px;
+}
+

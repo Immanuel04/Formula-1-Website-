@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">
+        <style>
+            .logo-name{
+                display: inline-block;
+                margin-top: 11px;
+            }
+            span{
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body background="./img/bg4.jpg">
+        <div class="loginform">
+            <div class="logo">
+                <img class="logo-img" src="./img/Background1.jpg" alt="">
+                <p class="logo-name" >Fantasy F1</p>
+            </div>
+            <form id="admin" class="inputgroup" action="login.jsp" method="post">
+                <input type="email" class="input" placeholder="Email" name="email" required="">
+                <input type="password" class="input" placeholder="Enter password" name="lpass" required="">
+                <br>
+                <br>
+                <input type="submit" class="btnsubp"  value="LOG-IN"><br><br>
+                <span>New User ?  <a href="index.html"> Register now</a></span>
+            </form>
+        </div>
+    </body>
+</html>
